@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TalkToLearn.in | Educational Consultancy</title>
+<style>
+  body { margin:0; font-family: Arial, sans-serif; background: black; color: white; }
+  header { 
+    background: url('images/college_collage.jpg') no-repeat center/cover; 
+    height: 80vh; 
+    display:flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    text-align: center;
+  }
+  header h1 { font-size: 60px; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); margin: 0; }
+  header p { font-size: 22px; text-shadow: 1px 1px 3px rgba(0,0,0,0.7); }
+  nav { background: #111111; text-align: center; padding: 15px; }
+  nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+  section { padding: 50px 20px; max-width: 1200px; margin: 40px auto; background: #111111; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+  h2 { color: #00ccff; text-align: center; margin-bottom: 30px; }
+  .services, .courses { display:flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+  .services div, .courses div { flex: 1 1 250px; text-align: center; }
+  .services img, .courses img { width:100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+  p, li { font-size: 16px; line-height: 1.6; color: #ffffff; }
+  ul { padding-left: 20px; }
+  form { display:flex; flex-direction: column; gap: 15px; max-width: 600px; margin:auto; }
+  form input, form select { padding:10px; border-radius:5px; border:none; }
+  button { padding:12px; background: #00ccff; color: black; border:none; border-radius:5px; cursor:pointer; font-size:16px; }
+  footer { background: #111111; color: white; text-align: center; padding: 20px; }
+  #thankyou { display:none; text-align:center; color:#00ff88; font-size:24px; margin-top:20px; }
+  #applicantCounter { text-align:center; margin-top:20px; color:#00ff88; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>TalkToLearn.in</h1>
+  <p>India's Best Dealing Educational Website – Build Your Career with Top Colleges</p>
+</header>
+
+<nav>
+  <a href="#about">About Us</a>
+  <a href="#services">Services</a>
+  <a href="#courses">Courses</a>
+  <a href="#apply">Apply</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p style="max-width:900px; margin:auto;">We are young entrepreneurs in the education sector. We help students get admissions into top colleges and guide them to enhance their careers with confidence and expert support. We provide guidance for top universities in Bangalore, Kerala, Tamil Nadu, and abroad.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div>
+      <img src="images/career_guidance.jpg" alt="Career Guidance">
+      <p>Career Guidance & Counseling</p>
+    </div>
+    <div>
+      <img src="images/college_admission.jpg" alt="College Admission">
+      <p>College Admission Assistance</p>
+    </div>
+    <div>
+      <img src="images/course_selection.jpg" alt="Course Selection">
+      <p>Course Selection Support</p>
+    </div>
+    <div>
+      <img src="images/education_consultancy.jpg" alt="Educational Consultancy">
+      <p>Aviation & Professional Program Guidance</p>
+    </div>
+  </div>
+</section>
+
+<section id="courses">
+  <h2>Courses We Offer</h2>
+  <ul>
+    <li><strong>Management / Commerce:</strong> BBA, BBA Aviation Management, BBA HR Management, BBA International Business, B.Com, BHM</li>
+    <li><strong>Science / Technology / IT:</strong> BSc (Physics, Chemistry, Maths, Biology, Biotechnology, Microbiology, Nursing, Agriculture, Environmental Science), BCA, BTech (Mechanical, Civil, Electrical, Computer, Aerospace, IT), BSc Nursing</li>
+    <li><strong>Paramedical Courses (UG Diploma/Degree):</strong> BPT, BMLT, BOT, etc.</li>
+    <li><strong>Medical:</strong> MBBS, BDS</li>
+  </ul>
+  <p>We guide students to top universities in Bangalore, Kerala, Tamil Nadu, and abroad to build a successful career.</p>
+</section>
+
+<section id="apply">
+  <h2>Apply Now</h2>
+  <form id="applicationForm">
+    <input type="text" name="student_name" placeholder="Student Name" required>
+    <input type="tel" name="student_ph" placeholder="Phone Number" required>
+    <input type="text" name="guardian_name" placeholder="Father/Guardian Name" required>
+    <input type="tel" name="guardian_ph" placeholder="Father/Guardian Phone Number" required>
+    <select name="course" required>
+      <option value="">Select Course</option>
+      <option>BBA</option>
+      <option>BBA Aviation Management</option>
+      <option>BBA HR Management</option>
+      <option>BBA International Business</option>
+      <option>B.Com</option>
+      <option>BHM</option>
+      <option>BSc</option>
+      <option>BCA</option>
+      <option>BTech</option>
+      <option>BSc Nursing</option>
+      <option>Paramedical Courses</option>
+      <option>MBBS</option>
+      <option>BDS</option>
+    </select>
+    <input type="text" name="college" placeholder="Preferred College / University" required>
+    <button type="submit">Submit Application</button>
+  </form>
+  <div id="thankyou">Thank you! Explore your future career.</div>
+  <div id="applicantCounter">Total Applicants: <span id="applicantCount">0</span></div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center;">Email: talktolearnin@gmail.com | Phone: 9633084028</p>
+</section>
+
+<footer>
+  <p>© 2025 TalkToLearn.in. All Rights Reserved.</p>
+</footer>
+
+<script>
+  let count = 0; // initial applicant count
+  const form = document.getElementById('applicationForm');
+  const thankyou = document.getElementById('thankyou');
+  const applicantCount = document.getElementById('applicantCount');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    count++;
+    applicantCount.textContent = count;
+    form.style.display = 'none';
+    thankyou.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
